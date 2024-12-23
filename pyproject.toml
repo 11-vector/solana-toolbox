@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "solana-toolbox"
+version = "0.1.0"
+description = ""
+authors = ["Victor <vector.code11@gmail.com>"]
+readme = "README.md"
+packages = [{include = "solana_toolbox", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+solders = "^0.23.0"
+solana = "^0.36.1"
+httpx = "^0.28.1"
+asyncstdlib = "^3.13.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.14.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
